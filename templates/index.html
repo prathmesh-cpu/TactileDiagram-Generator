@@ -1,0 +1,176 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cd1b3c60ee.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="{% static 'bulb.webp' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <title>Insight | Pioneering New Paths in Visually Impaired Education</title>
+</head>
+
+<body>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVIGATION BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <nav class="navbar">
+        <div class="logo"><a href="{% url 'index' %}">INSIGHT</a></div>
+        <ul>
+            <li><a href="{% url 'index' %}" class="active">Home</a></li>
+            <li><a href="{% url 'index' %}" class="dropdown">Products</a></li>
+            <li><a href="{% url 'index' %}" class="dropdown">Courses</a></li>
+            <li class="dropdown">
+                <a>Tools</a>
+                <div class="dropdown-content">
+                    <a href="{% url 'textBraille' %}" class="active">Text to Braille</a>
+                    <a href="{% url 'upload' %}">2D Image to Tactile</a>
+                </div>
+            </li>
+        </ul>
+        <a class="signup_btn" href="#footer">Login</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <a href="#top">
+        <div class="top-arrow">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </a>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ HERO SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="hero">
+        <div class="hero-txt">
+            <h1>Pioneering New Paths<br>in <span class="hero_VI">Visually Impaired</span> <span class="hero_VI1">Specially Abled</span><br>Education.</h1>
+            <p class="para">At Insight, we're revolutionizing education for visually impaired students. Our mission is simple: to make learning accessible. With our all-in-one solution, we're breaking barriers and opening doors to boundless opportunities.</p>
+            <div>
+                <a href="{% url 'textBraille' %}" class="cta-btn">Text to Braille</a>
+                <a href="{% url 'upload' %}" class="cta-btn">2D Image to Tactile</a>
+                {% comment %} <a class="cta-btn" href="2DtoTactile">2D to Tactile</a>
+                <a class="cta-btn" href="textBraille">Text to Braille</a> {% endcomment %}
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="{% static 'Group 1.png' %}" alt="">
+        </div>
+    </section>
+    <section class="about">
+        <h2>About us</h2>
+        <div>
+            <div class="first">
+                <div>
+                    <h2 id="vision">Vision</h2>
+                </div>
+                <div>
+                    <p>To create a world where visually impaired students have the same opportunities to learn as their
+                        sighted peers.</p>
+                </div>
+            </div>
+            <div class="middle">
+                <div>
+                    <p>To empower visually impaired students by providing them with access to quality education and
+                        resources</p>
+                </div>
+                <div>
+                    <h2 id="mission">Mission</h2>
+                </div>
+            </div>
+            <div class="last">
+                <div>
+                    <h2 id="values">Values</h2>
+                </div>
+                <div class="last-txt">
+                    <p><strong>Accessibility:</strong> We believe that all students, regardless of vision, should have
+                        access to quality education.</p>
+                    <p><strong>Innovation:</strong> We are committed to using innovative technologies to make education
+                        more accessible
+                        for visually impaired students.</p>
+                    <p><strong>Collaboration:</strong> We believe that by working together, we can create a more
+                        inclusive and
+                        accessible world for all students.</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="about-services" >
+            <div class="about-services-item">
+                <img src="{% static 'img_br.png' %}" class="img-item" alt="" />
+                <h3 class="about-services-title">Text-to-Braille</h3>
+                <p class="about-services-desc para">Transforming text into Braille, providing accessibility through PNG files.</p>
+            </div>
+            <div class="about-services-item">
+                <img src="{% static 'online-course.png' %}" class="img-item" alt="" />
+                <h3 class="about-services-title">Courses</h3>
+                <p class="about-services-desc para">Guided learning experiences tailored for the visually impaired, empowering education and skill development.</p>
+            </div>
+            <div class="about-services-item">
+                <img src="{% static '3d.png' %}" class="img-item" alt="" />
+                <h3 class="about-services-title">Image to 3d</h3>
+                <p class="about-services-desc para">Bringing images to life with 3D models, enhancing accessibility for the visually impaired.</p>
+            </div>
+            <div class="about-services-item">
+                <img src="{% static 'plate.png' %}" class="img-item" alt="" />
+                <h3 class="about-services-title">Handmade Products</h3>
+                <p class="about-services-desc para">Crafted with care by skilled artisans, offering tactile experiences for the visually impaired.</p>
+            </div>
+            
+        </div>
+    </section>
+    <footer>
+        <div class="contact-container" id="footer">
+            <div class="nav-links">
+                <div>
+                    <h2>INSIGHT</h2>
+                    <p>Thank you for visiting our website. Connect with us over socials.</p>
+                    <p>Keep Learning📚. Connect with us over live chat!</p>
+                </div>
+                <div class="quick-links">
+                    <h2>Quick Links</h2>
+                    <a href="#top" id="active"><i class="fas fa-chevron-circle-right"></i> &nbsp;Home</a>
+                    <a href="#about"><i class="fas fa-chevron-circle-right"></i> &nbsp;About</a>
+                    <a href="{% url 'textBraille' %}"><i class="fas fa-chevron-circle-right"></i> &nbsp;Text to Braille</a>
+                    <a href="{% url 'upload' %}"><i class="fas fa-chevron-circle-right"></i> &nbsp;2D Image to Tactile</a>
+                    <a href="{% url 'upload' %}"><i class="fas fa-chevron-circle-right"></i> &nbsp;Products</a>
+                    <a href="{% url 'upload' %}"><i class="fas fa-chevron-circle-right"></i> &nbsp;Courses</a>
+                </div>
+                <div class="contact-info">
+                    <h2>Contact Info</h2>
+                    <p><a href="mailto:@gmail.com" id="active"><i
+                                class="fa-solid fa-envelope"></i>&nbsp; teaminsight@gmail.com</a></p>
+                    <p><a href="https://www.google.com/maps/@18.6237666,73.7519826,13.75z" id="active"
+                            target="_blank"><i class="fa-solid fa-map-location-dot"></i>&nbsp; Pune, India - 411033</a>
+                    </p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Designed With <i class="fa-solid fa-heart"></i> By <span>Team TechGurus</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js" integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'script.js' %}"></script>
+    
+    <script>
+        gsap.to(".hero_VI", {
+            duration: 1,
+            opacity: 0,
+            x: 50,
+            delay: 2,
+          });
+          gsap.to(".hero_VI1", {
+            duration: 1,
+            opacity: 1,
+            x: 0,
+            delay: 2.8,
+          });
+        </script>
+</body>
+
+</html>

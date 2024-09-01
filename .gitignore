@@ -1,0 +1,118 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/build
+
+# Node.js dependencies
+/node_modules
+
+# Python Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Python C extensions
+*.so
+
+# Python distribution / packaging
+.Python
+env/
+venv/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller files
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+*.pot
+
+# Django specific
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+
+# Django migrations
+**/migrations/
+
+# Django environments
+.env
+
+# Frontend tools
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# IDEs and editors
+/.idea/
+/.project
+/.classpath
+.c9/
+*.launch
+/.settings/
+*.sublime-workspace
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+.cache/
+
+# OSX specific
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# PyBuilder
+target/
+
+# Sphinx documentation
+docs/_build/
